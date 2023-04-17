@@ -1,10 +1,8 @@
 name: Open PR to develop
-
 on:
   push:
     branches:
       - main
-
 jobs:
   Check-Dependencies:
     runs-on: ubuntu-latest
