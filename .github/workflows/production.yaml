@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  Check-Dependencies:
+  Pull-request-validation:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,3 +21,5 @@ jobs:
           run_install: false
       - name: Check dependencies
         run: pnpm audit
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
