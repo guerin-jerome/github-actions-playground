@@ -23,3 +23,5 @@ jobs:
         run: pnpm audit
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Testing
+        run: pnpm test
